@@ -30,6 +30,7 @@ module apb_spi_master
     output logic                [1:0] events_o,
 
     output logic                      spi_clk,
+    output logic                [3:0] spi_oen,
     output logic                      spi_csn0,
     output logic                      spi_csn1,
     output logic                      spi_csn2,
@@ -360,6 +361,7 @@ module apb_spi_master
         .spi_ctrl_data_rx_valid ( spi_ctrl_data_rx_valid ),
         .spi_ctrl_data_rx_ready ( spi_ctrl_data_rx_ready ),
         .spi_clk                ( spi_clk                ),
+        .spi_oen                ( spi_oen                ),
         .spi_csn0               ( spi_csn0               ),
         .spi_csn1               ( spi_csn1               ),
         .spi_csn2               ( spi_csn2               ),
